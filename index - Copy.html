@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+body{
+    margin: 0;
+    padding: 0;
+}
+.main{
+    overflow: auto;
+}
+.header{
+    margin-top:0;
+    width: 100%;
+    height: 95px;
+    background-color: white; 
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    position:fixed;
+    z-index: 10;
+}
+.heading1{
+    margin: 12px 0 0 8px;
+    padding: 0;
+    color: navy;
+    font-family: sans-serif;
+    display: inline-block;
+}
+.heading1::first-letter{
+    font-size: 35px;
+}
+.heading2{
+    margin: 3px 0 0 10px;
+    padding: 0;
+    color: navy;
+    font-family: sans-serif;
+}
+.para1{
+    margin: 0 0 0 10px;
+    padding: 0;
+    color: rgb(93, 92, 92);
+    font-family: sans-serif;
+    font-size: 12px;
+}
+.para2{
+    color: navy;
+    font-family:sans-serif;
+    text-decoration: bold;
+    margin-top: 30px;
+}
+.innerdiv2{
+    /* background-color: lightblue; */
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+.logo{
+    height: 24px;
+    width: 24px;
+    margin: 25px 0 0 0;
+}
+.aboutUs{
+        width: 100%;
+        height: 50px;
+        background-color: rgba(0, 0, 0,0.65);
+        display: flex;
+        align-items: center;
+      margin-top: 95px;
+      position: fixed;
+      z-index: 1;
+}
+.para3{
+    font-family: sans-serif;
+    font-size: large;
+    color: white;
+    margin-left: 10px;
+    font-size: 20px;
+}
+.moving{
+    width: 100%;
+    height: 200px;
+    box-shadow: 3px  3px 3px #55555583;   
+    margin-top:145px;
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+.services{
+    color: rgb(93, 92, 92);
+    font-family: lucida sans;
+    margin-left: 8px;
+    margin-right: 8px;
+    font-size: 13px;
+}
+.heading3{
+    color: navy;
+    font-family: sans-serif;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+.free-estimate{
+    width: 320px;
+   height: 325px ;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 0 10px  #6a69695c;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.outer-free-estimate{
+    width: 100%;
+    height: 350px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.para4{
+        font-family: sans-serif;
+        color: navy;
+        font-weight: bold;
+        position: relative;
+}
+.free-estimate-inputs{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    flex-direction: column;
+}
+input{
+    margin: 6px;
+    border: 0;
+    height: 27px;
+    width: 250px;
+    font-family:sans-serif;
+    font-size: 12px;
+    border-radius: 3.5px;
+    background-color: rgb(210, 230, 251);
+    padding-left: 25px;
+}
+.input-container{
+    position: relative;
+}
+.icon{
+    position: absolute;
+        height: 20px;
+}
+.left-icon{
+    left: 7px;
+    top:10px;
+}
+.right-icon{
+    right: 7px;
+    bottom:10px;
+}
+.input-field{
+    padding-left: 30px;
+    padding-right: 30px;
+    width: 100%;
+}
+.btn1{
+    margin-top: 12px;
+    background-color: navy;
+    color: white;
+    padding: 8px 20px 8px 20px;
+    border: none;
+    border-radius: 3.5px;
+    font-family: sans-serif;
+    width: 275px;
+    font-weight: bold;
+}
+.heading4{
+    margin-left: 20px;
+    font-family:sans-serif;
+    color:navy;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    text-decoration-color: navy;
+    text-decoration-thickness:4px;
+}
+.Ratings-and-reviews{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 520px;
+}
+.inside-div{
+    width: 90%;
+    height:130px;
+    background-color: white;
+    border-radius: 5px;
+    margin: 15px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    box-shadow: 0 0 10px  #6a696995;
+}
+.star{
+    height: 18px;
+}
+.star-rating{
+    margin-top: 10px;
+ margin-left: 10px;
+}
+.rating-review-para{
+    margin-left: 12px;
+    margin-right: 4px;
+    margin-top: -0.1px;
+    font-family: lucida sans;
+    color:gray;
+    font-size:13px;
+}
+.para-writer-name{
+    margin-top: -10px; 
+    margin-left: 12px;
+    color: navy;
+    font-family: lucida sans;
+    font-size: 14px;
+    font-weight: bold;
+}
+.areas-heading{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-family: sans-serif;
+    font-size: 26px;
+}
+.map{
+    display: flex;
+    justify-content: center;
+    width: auto;  
+}
+.mapsource{
+    box-shadow: 0 0 10px  #6a6969ad;
+    border-radius: 5px;   
+}
+.outer-area-names{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.area-names{
+    margin-top: 25px;
+    width:90%;
+    height:200px;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+.particular-area-name{
+    font-family: sans-serif;
+    color: navy;
+    font-size:16px ;
+    margin-right: 8px;
+}
+.ready-to-move{
+    width: 100%;
+    height:150px;
+    background-color: navy;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.rtm{
+    color: white;
+    text-align: center;
+    font-family: sans-serif;
+}
+.our-territory{
+    width: 100%;
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.our-territory-logo{
+    height: 13px;
+    margin-right: 5px;
+}
+.our-territory-info{
+    color: gray;
+    font-family: sans-serif;
+
+}
+.horse-image{
+    height: 45px;
+    position: relative;
+    top: 9px;
+    left: -4px;
+}
+.heading1copy{
+    margin: 12px 0 0 8px;
+    padding: 0;
+    color: navy;
+    font-family: sans-serif;
+    display: inline-block;
+}
+.heading1copy::first-letter{
+    font-size: 55px;
+}
+.horse-image-copy{
+    height: 58px;
+    position: relative;
+    top: 9px;
+    left: -4px;
+}
+.footer{
+    width: 100%;
+    height:200px;
+    display: flex;
+    flex-direction: row;
+}
+.footer-part-one{
+  width: 50%;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+}
+.footer-part-two{
+    width: 50%;
+    height: 200px;
+    display: flex;
+  flex-direction: column;
+}
+.footer-content{
+    text-decoration: none;
+    color: gray;
+    margin: 5px 5px 5px 20px;
+    font-family: lucida sans;
+    font-size: 13px;
+}
+.social-links{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content:center;
+
+}
+.social-button{
+    height: 50px;
+    padding-bottom: 10px;
+    border: none;
+    background-color: white;
+    border-radius: 4px;
+    box-shadow: 0 0 10px  #6a6969ad;
+    margin: 10px;
+}
+    </style>
+</head>
+<body>
+<div class="main">
+    <div class="header">
+        <div class="innerdiv1"><h2 class="heading1">FM</h2>
+            <img src="horse.png" alt="" class="horse-image">
+               <h4 class="heading2">Favourite Movers</h4>
+               <p class="para1">Moving Company</p>  
+        </div>
+               <div class="innerdiv2">
+                <p class="para2"><b>437-477-1300</b></p>
+                <a href="#"><img src="hbmenu.png" class="logo"></a>
+               </div>
+        </div>
+        <div class="aboutUs">
+                <p class="para3">About Us</p>
+        </div>
+        <img src="moving.jpeg" class="moving">
+       <p class="services">The specialized packing services we offer in Los Angeles are a favourite among locals, as they alleviate the stress of moving by ensuring secure and organised packing of your belongings.</p>
+       <h3 class="heading3">Organized and Packed...</h3>
+       <p class="services">As you prepare for relocation, managing various tasks can be overwhelming-rangingn from logistical planning to emotional aspects of starting anew. However, ensuring the safety of your belongings during the move often tops the list of concerns. Packing efficiently while maintaining item security can be daunting. At Good Neighbors Moving Company, we specialize in packing service trusted by Ontario residents, aiming to alleviate the stress of your move. Our packing experts are trained in cutting-edge technique an dutilize professional-grade supplies to secure your items for journey. With us handling the complexities of packing, you can focus on transitioning into a new space. Have us for a stress-free relocation experience! </p>
+      <div class="outer-free-estimate"> 
+        <div class="free-estimate">
+        <center><p class="para4">Get a Free Estimate</p></center>
+        <div class="free-estimate-inputs">
+                  <form> 
+
+                    <div class="input-container">
+                    <img src="pin.png" class="icon left-icon">
+                     <input type="text" id="input-field" placeholder="Current Address"> 
+                    <img src="search-13-256.png" class="icon right-icon">
+                    </div>
+
+                    <div class="input-container">
+                    <img src="pin.png" class="icon left-icon">
+                    <input id="input2" placeholder="Where to...?">
+                    <img src="search-13-256.png" class="icon right-icon">
+                    </div>
+
+                    <div class="input-container">
+                        <img src="icons8-calendar-64.png" class="icon left-icon" >
+                    <input id="input3" placeholder="Preffered Move Date*">
+                    </div>
+
+                <div class="input-container">
+                        <img src="icons8-email-60.png" class="icon left-icon">
+                    <input type="email" id="input4" placeholder="Email*">
+                </div>
+
+                <div class="input-container">
+                    <img src="icons8-phone-24.png" class="icon left-icon">
+                    <input type="number" id="input5" placeholder="Phone Number">
+                </div>
+
+                </form>
+        </div>
+       <a href="#"><button class="btn1">Get a Free Estimate</button></a>
+       </div>
+    </div>
+    <h2 class="heading4">Ratings & Reviews</h2>
+    <div class="Ratings-and-reviews">
+        <div class="inside-div">
+                <div class="star-rating">
+                <img class="star" src="icons8-star-48.png"> 
+                <img class="star" src="icons8-star-48.png"> 
+                <img class="star" src="icons8-star-48.png"> 
+                <img class="star" src="icons8-star-48.png"> 
+                <img class="star" src="icons8-star-48.png"> 
+            </div>
+            <p class="rating-review-para">I don't usually shar experiences, good or bad, but i definetely felt the need to do it this time. This was by far the best experience we could ever imagine, and well worth the money.</p>
+            <p class="para-writer-name">Joshua Da Silva</p>
+        </div>
+
+        <div class="inside-div">
+            <div class="star-rating">
+            <img class="star" src="icons8-star-48.png"> 
+            <img class="star" src="icons8-star-48.png"> 
+            <img class="star" src="icons8-star-48.png"> 
+            <img class="star" src="icons8-star-48.png"> 
+            <img class="star" src="icons8-star-48.png"> 
+        </div>
+        <p class="rating-review-para">I don't usually shar experiences, good or bad, but i definetely felt the need to do it this time. This was by far the best experience we could ever imagine, and well worth the money.</p>
+        <p class="para-writer-name">Joshua Da Silva</p>
+    </div>
+
+    <div class="inside-div">
+        <div class="star-rating">
+        <img class="star" src="icons8-star-48.png"> 
+        <img class="star" src="icons8-star-48.png"> 
+        <img class="star" src="icons8-star-48.png"> 
+        <img class="star" src="icons8-star-48.png"> 
+        <img class="star" src="icons8-star-48.png"> 
+    </div>
+    <p class="rating-review-para">I don't usually shar experiences, good or bad, but i definetely felt the need to do it this time. This was by far the best experience we could ever imagine, and well worth the money.</p>
+    <p class="para-writer-name">Joshua Da Silva</p>
+</div>
+       
+    </div>
+    <h1 class="areas-heading">Areas we Cater</h1>
+    <div class="map"><iframe class="mapsource" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d184552.67410569743!2d-79.54286632320922!3d43.7181228028861!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4cb90d7c63ba5%3A0x323555502ab4c477!2sToronto%2C%20ON%2C%20Canada!5e0!3m2!1sen!2sin!4v1703700203882!5m2!1sen!2sin" width="90%" height="300px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+    <div class="outer-area-names">
+        <div class="area-names">
+            <span class="particular-area-name">Mississauga</span>
+            <span class="particular-area-name">Toronto</span>
+            <span class="particular-area-name">Scarborough</span>
+            <span class="particular-area-name">Pickering</span>
+            <span class="particular-area-name">Richmond Hill</span>
+            <span class="particular-area-name">Vaughan</span>
+            <span class="particular-area-name">Brampton</span>
+            <span class="particular-area-name">Milton</span>
+            <span class="particular-area-name">Oakville</span>
+            <span class="particular-area-name">Burlington</span>
+            <span class="particular-area-name">Hamilton</span>
+            <span class="particular-area-name">Oshawa</span>
+            <span class="particular-area-name">Kitchner</span>
+            <span class="particular-area-name">New Market</span>
+            <span class="particular-area-name">Bradford</span>
+        </div>
+    </div>
+    <div class="ready-to-move">
+        <h2 class="rtm">Ready To Move?</h2>
+        <p class="rtm">Minimize time and effort - secure your move with us today.</p>
+    </div>
+    <div class="innerdiv1"><h2 class="heading1copy" style="font-size: 40px;">FM</h2>
+        <img src="horse.png" alt="" class="horse-image-copy">
+        <h2 class="heading2">Favourite Movers</h2>
+        <p class="para1" style="font-size: 14px; margin-left: 10px;">Moving Company</p>  
+ </div>
+ <div class="our-territory">
+ <img src="pin.png" alt="" class="our-territory-logo">
+ <span class="our-territory-info">From Pickering till Hamilton we move it all.</span>
+ </div>
+ <div class="footer"> 
+    <div class="footer-part-one">
+        <h2 class="heading4">Pages</h2>
+        <a class="footer-content" href="#">Home</a>
+        <a class="footer-content" href="#">Contact</a>
+        <a class="footer-content" href="#">Reviews</a>
+        <a class="footer-content" href="#">About us</a>
+    </div> 
+    
+    <div class="footer-part-two">
+        <h2 class="heading4">Services</h2>
+        <a class="footer-content" href="#">Residential Moving</a>
+        <a class="footer-content" href="#">Commercial Moving</a>
+        <a class="footer-content" href="#">White Glove Movers</a>
+        <a class="footer-content" href="#">Packing Services</a>
+    </div>
+ </div>
+ <div class="social-links">
+   <button class="social-button"><img src="icons8-instagram-48.png" alt="" class="instagram"></button>
+   <button class="social-button"><img src="icons8-google-maps-48.png" alt="" class="google-maps"></button>
+ </div>
+</div>
+</body>
+</html>
